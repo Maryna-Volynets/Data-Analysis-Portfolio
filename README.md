@@ -35,10 +35,20 @@ Using SQL, we defined:
 
   1. **Annual members made 3 612 001 trips** in 2024 and **casual riders - 2 099 030**. The average trip duration for **annual members is 12 minutes**, while for **casual riders it is 21 minutes**.
 
+![image](https://github.com/user-attachments/assets/8958d356-a71f-4186-8c08-0656f197e57f)
 
-  2. **Annual members** make most trips on weekdays, especially **Tuesday through Thursday**, while **casual riders** use Cyclistic bikes most often from **Friday through Sunday**.
-  3. Annual members and casual riders made most trips in **September**.
-  4. Most trips **(22 965) were started annual members from Kingsbury St & Kinzie St**, located in Chicago near the East Bank Club (Chicago’s premier health club). Most trips **(44 633) were started casual riders from Streeter Dr & Grand Ave station**, located in Chicago at the Addams (Jane) Memorial Park, on the shores of Lake Michigan. We assume that annual members use Cyclistic bikes for commuting or errands, while casual riders use Cyclistic bikes for bike ride.
+  3. **Annual members** make most trips on weekdays, especially **Tuesday through Thursday**, while **casual riders** use Cyclistic bikes most often from **Friday through Sunday**.
+
+![image](https://github.com/user-attachments/assets/48c3c744-d679-4ba0-a7d4-261058de0cb6)
+
+  4. Annual members and casual riders made most trips in **September**.
+
+![image](https://github.com/user-attachments/assets/e8dd8ac3-1f02-4421-b07c-bfd0e9bf81a2)
+
+  5. Most trips **(22 965) were started annual members from Kingsbury St & Kinzie St**, located in Chicago near the East Bank Club (Chicago’s premier health club). Most trips **(44 633) were started casual riders from Streeter Dr & Grand Ave station**, located in Chicago at the Addams (Jane) Memorial Park, on the shores of Lake Michigan. We assume that annual members use Cyclistic bikes for commuting or errands, while casual riders use Cyclistic bikes for bike ride.
+
+![image](https://github.com/user-attachments/assets/dab4c191-3c8f-4491-804e-257ca6cb630a)
+
 
 ### Data visualization
 

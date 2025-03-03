@@ -1,8 +1,12 @@
-# [Cyclistic-marketing-program](https://github.com/Maryna-Volynets/Data-Analysis-Portfolio/tree/main/Cyclistic-marketing-program)
+# Data-Analysis-Portfolio
+
+**This folder was created to store case studies and share portfolio**
 
 author: Maryna Volynets
 
-date: 2024-09-21
+date: 2025-03-03
+
+# [Cyclistic-marketing-program](https://github.com/Maryna-Volynets/Data-Analysis-Portfolio/tree/main/Cyclistic-marketing-program)
 
 ---
 

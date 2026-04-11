@@ -3,3 +3,6 @@ Detection of Suspicious -Financial -Transactions/data/PS_20174392719_14912044394
 Detection of Suspicious -Financial -Transactions/data/PS_20174392719_1491204439457_log.csv
 =======
 >>>>>>> 16716b3dd163dfc82d907a169c427e98b62f35fd
+data/
+!data/.gitkeep
+

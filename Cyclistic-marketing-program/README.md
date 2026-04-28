@@ -10,7 +10,7 @@ date: 2025-03-03
 Cyclistic, a bike-share company in Chicago. The director of marketing believes the company’s future success depends on maximizing the number of annual memberships. Therefore, we want to understand how casual riders and annual members use Cyclistic bikes differently. From these insights, we will design a new marketing strategy to convert casual riders into annual members.
 
 ## Project Overview
-This project analyzes Cyclistic bike-share trip data for 2024 to identify behavioral differences between annual members and casual riders and provide marketing recommendations to convert casual riders into members.
+This project analyzes Cyclistic bike-share data for 2024 to identify behavioral differences between annual members and casual riders and provide data-driven marketing strategies to increase membership conversion and revenue.
 
 ### We need to answer the following questions:
 
@@ -35,8 +35,7 @@ another privacy information.
 
  We used RDBMS PostgreSQL for data exploration and cleaning. Data was imported into PostgreSQL from csv files. We have a problem with data type columns 
  "start_lat", "start_lng", "end_lat", "end_lng". At first we defined text data type for these columns and then changed it for float data type. 
- We cleaned the data from duplicates, and removed records with empty values in the station coordinates, removed rows where the trip start time is later than 
- or equal to the trip end time. Some stations had identical coordinates but different names. These cases were reviewed and treated as potential inconsistencies in station naming.
+ Duplicates and inconsistent records were removed to ensure data accuracy and reliability of analysis. Some stations had identical coordinates but different names. These cases were reviewed and treated as potential inconsistencies in station naming.
  All manipulation described in [this file](https://github.com/Maryna-Volynets/Data-Analysis-Portfolio/blob/main/Cyclistic-marketing-program/Data_Cleaning_Analysis_Queries.sql).
  
  ### Data analysis: identify trends and relationships
@@ -62,7 +61,8 @@ Using SQL, we defined:
 
 ### Data visualization
 
-We used Tableau for visualize our [results](https://public.tableau.com/app/profile/maryna.volynets/viz/My-first-project/My-First-Project).
+The interactive dashboard was created in Tableau to explore ride patterns and user behavior:
+[results](https://public.tableau.com/app/profile/maryna.volynets/viz/My-first-project/My-First-Project).
 
 ## Key Findings
 - Annual members completed more trips than casual riders in 2024.

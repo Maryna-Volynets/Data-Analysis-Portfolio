@@ -3,11 +3,14 @@ author: Maryna Volynets
 
 date: 2025-03-03
 
-# [Cyclistic-marketing-program](https://github.com/Maryna-Volynets/Data-Analysis-Portfolio/tree/main/Cyclistic-marketing-program)
+# [Cyclistic Bike-Share Marketing Analysis](https://github.com/Maryna-Volynets/Data-Analysis-Portfolio/tree/main/Cyclistic-marketing-program)
 
 ---
 
 Cyclistic, a bike-share company in Chicago. The director of marketing believes the company’s future success depends on maximizing the number of annual memberships. Therefore, we want to understand how casual riders and annual members use Cyclistic bikes differently. From these insights, we will design a new marketing strategy to convert casual riders into annual members.
+
+## Project Overview
+This project analyzes Cyclistic bike-share trip data for 2024 to identify behavioral differences between annual members and casual riders and provide marketing recommendations to convert casual riders into members.
 
 ### We need to answer the following questions:
 
@@ -15,20 +18,26 @@ Cyclistic, a bike-share company in Chicago. The director of marketing believes t
 2. Why would casual riders buy Cyclistic annual memberships?
 3. How can Cyclistic use digital media to influence casual riders to become members?
 
+## Tools Used
+- PostgreSQL — data cleaning and analysis
+- SQL — querying and aggregation
+- Tableau — data visualization
+- GitHub — project documentation
+
 ### Data sources description
 
-We use Cyclistic’s historical trip data to analyze and identify trends (Cyclistic trip data beetwen 2024-01-01 and 2024-12-31) 
+We use Cyclistic’s historical trip data to analyze and identify trends (Cyclistic trip data between 2024-01-01 and 2024-12-31) 
 from [here](https://divvy-tripdata.s3.amazonaws.com/index.html). It is organised in 12 csv-format spreadsheets naming with year and month. 
-This is public data that we can use to explore how different customer types are using Cyclistic bikes. There are no personally identiable information or 
+This is public data that we can use to explore how different customer types are using Cyclistic bikes. There are no personally identifiable information or 
 another privacy information.
 
 ### Cleaning and manipulation of data
 
  We used RDBMS PostgreSQL for data exploration and cleaning. Data was imported into PostgreSQL from csv files. We have a problem with data type columns 
- "start_lat", "start_lng", "end_lat", "end_lng". At first we defined text data type for these columns and than changed it for float data type. 
+ "start_lat", "start_lng", "end_lat", "end_lng". At first we defined text data type for these columns and then changed it for float data type. 
  We cleaned the data from duplicates, and removed records with empty values in the station coordinates, removed rows where the trip start time is later than 
- or equal to the trip end time. We also found that some stations had exactly the same coordinates but different names and removed them, considering such data 
- to be erroneous. All manipulation described in [this file](https://github.com/Maryna-Volynets/Data-Analysis-Portfolio/blob/main/Cyclistic-marketing-program/Data_Cleaning_Analysis_Queries.sql).
+ or equal to the trip end time. Some stations had identical coordinates but different names. These cases were reviewed and treated as potential inconsistencies in station naming.
+ All manipulation described in [this file](https://github.com/Maryna-Volynets/Data-Analysis-Portfolio/blob/main/Cyclistic-marketing-program/Data_Cleaning_Analysis_Queries.sql).
  
  ### Data analysis: identify trends and relationships
  
@@ -53,14 +62,16 @@ Using SQL, we defined:
 
 ### Data visualization
 
-We used Tableau for visualization our [results](https://public.tableau.com/app/profile/maryna.volynets/viz/My-first-project/My-First-Project).
+We used Tableau for visualize our [results](https://public.tableau.com/app/profile/maryna.volynets/viz/My-first-project/My-First-Project).
 
-### Conclusions and Recommendations
+## Key Findings
+- Annual members completed more trips than casual riders in 2024.
+- Casual riders had longer average ride durations.
+- Members used bikes mostly on weekdays, while casual riders used them more on weekends.
+- Casual riders were concentrated near recreational and tourist areas.
 
-1. Annual members use Cyclistic more frequently, but at shorter intervals than casual riders. Annual members make the most trips from Tuesday to Thursday, while casual riders make the most trips from Friday to Sunday.
-
-
-2. Casual riders are likely to purchase an annual membership to Cyclistic to use bikes for everyday needs.
-
-
-3. Cyclistic can use advertising messages to send to casual riders' smartphones with offers to purchase an annual membership on favorable terms for using the program on weekdays.
+## Recommendations
+1. Launch weekend-to-weekday conversion campaigns targeting casual riders who frequently ride on weekends.
+2. Promote annual memberships near high-traffic tourist and recreational stations, especially Streeter Dr & Grand Ave.
+3. Offer limited-time discounts or trial membership plans for casual riders with repeated usage.
+4. Use digital ads and in-app notifications focused on cost savings, convenience, and weekday commuting benefits.
